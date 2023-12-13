@@ -58,26 +58,26 @@ namespace Lab2_Threadss
 
             if (randomProblems == 1)
             {
-                Console.WriteLine($"⚠️⚠️{Name} Stopped to add gasoline, he lost 30 second! ❌⛽⏳⚠️⚠️");
-                 Console.Out.WriteLineAsync();
+                await Console.Out.WriteLineAsync($"⚠️⚠️{Name} Stopped to add gasoline, he lost 30 second! ❌⛽⏳⚠️⚠️");
+                 await Console.Out.WriteLineAsync();
                 Thread.Sleep(30000);
             }
             else if (randomProblems <= 3)
             {
-                Console.WriteLine($"⚠️⚠️{Name} Got a flat tire and changed it. He lost 20 second! 😵‍💫🛞⏳⚠️⚠️");
-                Console.Out.WriteLineAsync();
+                await Console.Out.WriteLineAsync($"⚠️⚠️{Name} Got a flat tire and changed it. He lost 20 second! 😵‍💫🛞⏳⚠️⚠️");
+                await Console.Out.WriteLineAsync();
                 Thread.Sleep(20000);
             }
             else if (randomProblems <= 8)
             {
-                Console.WriteLine($"⚠️⚠️ {Name} Hit a bird on his windshield and washed it for 10 second! 🦢🩸⏳⚠️⚠️");
-                 Console.Out.WriteLineAsync();
+                await Console.Out.WriteLineAsync($"⚠️⚠️ {Name} Hit a bird on his windshield and washed it for 10 second! 🦢🩸⏳⚠️⚠️");
+                await Console.Out.WriteLineAsync();
                 Thread.Sleep(10000);
             }
             else if (randomProblems <= 18)
             {
-                Console.WriteLine($"⚠️⚠️{Name} Have engine problem, his speed reduced by 1 km/h.🔧🆘⚠️⚠️");
-                 Console.Out.WriteLineAsync();
+                await Console.Out.WriteLineAsync($"⚠️⚠️{Name} Have engine problem, his speed reduced by 1 km/h.🔧🆘⚠️⚠️");
+                await Console.Out.WriteLineAsync();
                 Speed--;
             }
 
